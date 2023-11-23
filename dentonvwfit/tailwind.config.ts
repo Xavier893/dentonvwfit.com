@@ -7,13 +7,21 @@ const config: Config = {
     './app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
-    extend: {
-      backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
-      },
+    colors: {
+      white: '#ffffff',
+      background: '#E8E8E8',
+      red: '#E73539',
+      black: '#000000',
+      grey: '#444343'
     },
+    boxShadow: {
+      lg: '0px 20px 70px 0px rgba(231, 53, 57, 0.15)'
+    },
+    fontFamily: {
+      inter: ['Inter', 'sans-serif'],
+      saira: ['Saira Condensed', 'sans-serif']
+    },
+    extend: {}
   },
   plugins: [],
 }
